@@ -1,0 +1,15 @@
+{
+  "50": {
+    "title": "50. THE VICTORIAN NOVEL",
+    "autores": [
+      {
+        "name": "Lewis Carroll",
+        "obras": ["alice's adventures in wonderland"]
+      },
+      {
+        "name": "Charles Dickens",
+        "obras": ["the posthumous papers of the picwick", "hard times"]
+      }
+    ]
+  }
+}
