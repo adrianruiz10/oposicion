@@ -1,0 +1,12 @@
+.input-respuestas {
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.respuesta-correcta {
+  border: 2px solid green;
+}
+
+.respuesta-incorrecta {
+  border: 2px solid red;
+}

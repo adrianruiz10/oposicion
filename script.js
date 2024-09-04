@@ -2,15 +2,29 @@ const selectTemas = document.getElementById('temasDisponibles')
 const exam = document.getElementById('exam')
 let units = {}
 
+function mostrarRespuestas() {
+  const respuestas = exam.querySelectorAll('input')
+  const selectedUnit = units[selectTemas.value]
+}
+
 function comprobarResultado() {
   const respuestas = exam.querySelectorAll('input')
   const selectedUnit = units[selectTemas.value]
   respuestas.forEach((input) => {
     const name = input.name
-    const author = selectedUnit.autores.find((author) => author.name === name)
-    if (author.obras.includes(input.value.toLocaleLowerCase())) {
-    } else {
-      input.value = ''
+    if (input.value !== '') {
+      const author = selectedUnit.autores.find((author) => author.name === name)
+      if (
+        author.obras.some(
+          (obra) => obra.toLocaleLowerCase() === input.value.toLocaleLowerCase()
+        )
+      ) {
+        input.classList.remove('respuesta-incorrecta')
+        input.classList.add('respuesta-correcta')
+      } else {
+        input.classList.remove('respuesta-correcta')
+        input.classList.add('respuesta-incorrecta')
+      }
     }
   })
 }
@@ -26,6 +40,7 @@ function pressSearchUnit() {
       const newInput = document.createElement('input')
       newInput.type = 'text'
       newInput.name = `${autor.name}`
+      newInput.classList.add('input-respuestas')
       exam.appendChild(newInput)
     })
     exam.appendChild(document.createElement('br'))

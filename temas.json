@@ -4,11 +4,142 @@
     "autores": [
       {
         "name": "Lewis Carroll",
-        "obras": ["alice's adventures in wonderland"]
+        "obras": ["Alice's Adventures in Wonderland"]
       },
       {
         "name": "Charles Dickens",
-        "obras": ["the posthumous papers of the picwick", "hard times", "little dorrit"]
+        "obras": [
+          "The Posthumous Papers of the Pickwick Club",
+          "Oliver Twist",
+          "Nicholas Nickleby",
+          "A Christmas Carol",
+          "David Copperfield",
+          "Bleak House",
+          "Hard Times",
+          "Little Dorrit",
+          "A Tale of Two Cities",
+          "Great Expectations",
+          "Our Mutual Friend"
+        ]
+      },
+      {
+        "name": "William Makepeace Thackeray",
+        "obras": [
+          "The Memoirs of Barry Lyndon",
+          "The Book of Snobs",
+          "Vanity Fair",
+          "Pendennis",
+          "The Newcomes",
+          "The Virginians"
+        ]
+      },
+      {
+        "name": "The Brontë Sisters",
+        "obras": ["Jane Eyre", "Wuthering Heights", "Agnes Grey", "Villette"]
+      },
+      {
+        "name": "Elizabeth Gaskell",
+        "obras": ["Mary Barton", "North and South", "Cranford"]
+      },
+      {
+        "name": "CHARLES KINGSLEY",
+        "obras": ["Alton Locke", "Westward Ho!", "Hypatia", "The Water-Babies"]
+      },
+      {
+        "name": "WILKIE COLLINS",
+        "obras": ["The Moonstone"]
+      },
+      {
+        "name": "Sir Arthur Conan DOYLE",
+        "obras": [
+          "A Study in Scarlet",
+          "The Sign of Four",
+          "The Adventures of Sherlock Holmes",
+          "The Hound of Baskervilles"
+        ]
+      },
+      {
+        "name": "BENJAMIN DISRAELI",
+        "obras": ["Coningsby", "Sybil, or The Two Nations", "Vivian Grey"]
+      },
+      {
+        "name": "ANTHONY TROLLOPE",
+        "obras": ["Phineas Finn", "Phineas Redux", "Chronicles of Barsetshire"]
+      },
+      {
+        "name": "GEORGE ELIOT",
+        "obras": [
+          "Adam Bede",
+          "Silas Marner",
+          "The Mill on the Floss",
+          "Middlemarch"
+        ]
+      },
+      {
+        "name": "THOMAS HARDY",
+        "obras": [
+          "Under the Greenwood Tree",
+          "Far from the Madding Crowd",
+          "The Return of the Native",
+          "The Mayor of Casterbridge",
+          "Tess of the D'Urbervilles",
+          "Jude the Obscure"
+        ]
+      },
+      {
+        "name": "JOSEPH CONRAD",
+        "obras": [
+          "Typhoon",
+          "The Mirror of the Sea",
+          "Almayer's Folly",
+          "An Outcast of the Islands",
+          "The Nigger of the Narcissus",
+          "Youth",
+          "Lord Jim",
+          "Heart of Darkness"
+        ]
+      },
+      {
+        "name": "RUDYARD KIPLING",
+        "obras": ["Captains Courageous", "Kim"]
+      },
+      {
+        "name": "GEORGE MEREDITH",
+        "obras": [
+          "Diana of the Crossways",
+          "The Ordeal of Richard Feverel",
+          "The Egoist"
+        ]
+      },
+      {
+        "name": "HENRY JAMES",
+        "obras": [
+          "Roderick Hudson",
+          "The American",
+          "The Europeans",
+          "Daisy Miller",
+          "Washington Square",
+          "The Portrait of a Lady",
+          "The Wings of the Dove",
+          "The Princess Casamassima",
+          "The Bostonians",
+          "What Maisie Knew",
+          "The Turn of the Screw",
+          "The Ambassadors",
+          "The Golden Bowl"
+        ]
+      },
+      {
+        "name": "ROBERT LOUIS STEVENSON",
+        "obras": ["Treasure Island", "Dr. Jekyll and Mr. Hyde"]
+      },
+      {
+        "name": "SAMUEL BUTLER",
+        "obras": ["The Way of All Flesh"]
+      },
+      {
+        "name": "THOMAS CARLYLE",
+        "obras": ["Treasure Island", "Sartor Resartus"]
       }
     ]
   }
