@@ -4,7 +4,22 @@ let units = {}
 
 function mostrarRespuestas() {
   const respuestas = exam.querySelectorAll('input')
+  if (respuestas.length === 0) {
+    return
+  }
   const selectedUnit = units[selectTemas.value]
+  let contador = 0
+  respuestas.forEach((input, i) => {
+    if (i > 0 && input.name !== respuestas[i - 1].name) {
+      contador = 0
+    }
+    const name = input.name
+    const author = selectedUnit.autores.find((author) => author.name === name)
+    input.value = author.obras[contador]
+    input.classList.remove('respuesta-correcta')
+    input.classList.remove('respuesta-incorrecta')
+    contador++
+  })
 }
 
 function comprobarResultado() {
@@ -36,6 +51,7 @@ function pressSearchUnit() {
     const newLabel = document.createElement('label')
     newLabel.textContent = autor.name
     exam.appendChild(newLabel)
+    exam.appendChild(document.createElement('br'))
     autor.obras.forEach((element) => {
       const newInput = document.createElement('input')
       newInput.type = 'text'
