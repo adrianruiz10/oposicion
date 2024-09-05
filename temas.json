@@ -1,4 +1,60 @@
 {
+  "47": {
+    "title": "47. INDUSTRIAL REVOLUTION AND DICKENS",
+    "autores": [
+      {
+        "name": "BLAKE",
+        "obras": [
+          "Milton",
+          "Songs of Innocence",
+          "Songs of Experience",
+          "The Chimney Sweepers",
+          "The Little Black Boy"
+        ]
+      },
+      {
+        "name": "GEORGE ELIOT",
+        "obras": ["Adam Bede", "The Mill on the Floss", "Middlemarch"]
+      },
+      {
+        "name": "EMILY BRONTË",
+        "obras": ["Wuthering Heights"]
+      },
+      {
+        "name": "THOMAS HARDY",
+        "obras": ["Far from the Madding Crowd", "Tess of the D'Urbervilles"]
+      },
+      {
+        "name": "CHARLOTTE BRONTË",
+        "obras": ["Jane Eyre"]
+      },
+      {
+        "name": "WORDSWORTH",
+        "obras": ["An Evening Walk"]
+      },
+      {
+        "name": "MARY SHELLEY",
+        "obras": ["Frankenstein"]
+      },
+      {
+        "name": "Charles Dickens",
+        "obras": [
+          "Sketches by Boz",
+          "The Posthumous Papers of the Pickwick Club",
+          "Oliver Twist",
+          "Nicholas Nickleby",
+          "A Christmas Carol",
+          "David Copperfield",
+          "Bleak House",
+          "Hard Times",
+          "Little Dorrit",
+          "A Tale of Two Cities",
+          "Great Expectations",
+          "Our Mutual Friend"
+        ]
+      }
+    ]
+  },
   "50": {
     "title": "50. THE VICTORIAN NOVEL",
     "autores": [
@@ -140,6 +196,33 @@
       {
         "name": "THOMAS CARLYLE",
         "obras": ["Treasure Island", "Sartor Resartus"]
+      }
+    ]
+  },
+  "56": {
+    "title": "56. RELATIONS BETWEEN IRELAND AND GREAT BRITAIN",
+    "autores": [
+      {
+        "name": "SYNGE",
+        "obras": ["The Playboy of the Western World"]
+      },
+      {
+        "name": "SEAN O'CASEY",
+        "obras": [
+          "The Shadow of a Gunman",
+          "Juno and the Paycock",
+          "The Plough and the Stars",
+          "The Silver Tassie"
+        ]
+      },
+      {
+        "name": "JAMES JOYCE",
+        "obras": [
+          "Dubliners",
+          "A Portrait of the Artist as a Young Man",
+          "Ulysses",
+          "Finnegan’s Wake"
+        ]
       }
     ]
   }
