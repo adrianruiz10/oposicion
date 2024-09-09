@@ -55,6 +55,197 @@
       }
     ]
   },
+  "48": {
+    "title": "48. ENGLISH ROMANTICISM. POETRY AND NOVEL",
+    "autores": [
+      {
+        "name": "Thomas De Quincey's",
+        "obras": ["Confessions of an English Opium Eater"]
+      },
+      {
+        "name": "Blake",
+        "obras": [
+          "Milton",
+          "And did those feet in ancient time",
+          "Songs of Innocence",
+          "Songs of Experience",
+          "The Chimney Sweepers",
+          "The Little Black Boy",
+          "Visions of the Daughters of Albion",
+          "The Marriage of Heaven and Hell",
+          "The Book of Urizen"
+        ]
+      },
+      {
+        "name": "Jane Austen",
+        "obras": [
+          "Sense and Sensibility",
+          "Pride and Prejudice",
+          "Mansfield Park",
+          "Emma",
+          "Northanger Abbey",
+          "Persuasion"
+        ]
+      },
+      {
+        "name": "Thomson",
+        "obras": ["The Seasons"]
+      },
+      {
+        "name": "Jhon Keats",
+        "obras": [
+          "Endymion",
+          "La Belle Dame Sans Merci",
+          "On Melancholy",
+          "On Indolence",
+          "On a Grecian Urn",
+          "To Psyche",
+          "To a Nightingale",
+          "To Autumn",
+          "The Fall of Hyperion"
+        ]
+      },
+      {
+        "name": "William Beckford",
+        "obras": ["Vathek"]
+      },
+      {
+        "name": "SAMUEL TAYLOR COLERIDGE",
+        "obras": [
+          "The Eolian Harp",
+          "Frost at Midnight",
+          "The Nightingale",
+          "The Rime of the Ancient Mariner",
+          "Dejection: An Ode",
+          "Christabel",
+          "Kubla Khan"
+        ]
+      },
+      {
+        "name": "PERCY BYSSHE SHELLEY",
+        "obras": [
+          "Liberty",
+          "Queen Mab",
+          "Alastor",
+          "Prometheus Unbound",
+          "Adonais"
+        ]
+      },
+      {
+        "name": "Robert Southey",
+        "obras": ["Thalaba the Destroyer"]
+      },
+      {
+        "name": "WORDSWORTH",
+        "obras": [
+          "We Are Seven",
+          "An Evening Walk",
+          "Descriptive Sketches",
+          "Lyrical Ballads",
+          "The Idiot Boy",
+          "The Thorn",
+          "Lines Composed a Few Miles above Tintern Abbey",
+          "I Wandered Lonely as a Cloud",
+          "The Prelude"
+        ]
+      },
+      {
+        "name": "LORD GEORGE GORDON BYRON",
+        "obras": [
+          "Childe Harold's Pilgrimage",
+          "The Giaour",
+          "The Bride of Abydos",
+          "The Corsair",
+          "Don Juan"
+        ]
+      },
+      {
+        "name": "Ann Radcliffe",
+        "obras": ["The Mysteries of Udolpho"]
+      },
+      {
+        "name": "Horace Walpole",
+        "obras": ["The Castle of Otranto"]
+      },
+      {
+        "name": "Lewis",
+        "obras": ["The Monk"]
+      },
+      {
+        "name": "Peacock",
+        "obras": ["Nightmare Abbey"]
+      },
+      {
+        "name": "MARY SHELLEY",
+        "obras": ["Frankenstein", "The Modern Prometheus"]
+      },
+      {
+        "name": "MARY SHELLEY",
+        "obras": ["Frankenstein", "The Modern Prometheus"]
+      },
+      {
+        "name": "WALTER SCOTT",
+        "obras": [
+          "Waverley",
+          "The Antiquary",
+          "Rob Roy",
+          "Ivanhoe",
+          "Castle Dangerous"
+        ]
+      },
+      {
+        "name": "Fanny Burney",
+        "obras": ["Evelina"]
+      },
+      {
+        "name": "James Hogg",
+        "obras": ["The Private Memoirs and Confessions of a Justified Sinner"]
+      }
+    ]
+  },
+  "49": {
+    "title": "49. DEVELOPMENT & ADMINISTRATION OF THE BRITISH EMPIRE",
+    "autores": [
+      {
+        "name": "JOSEPH CONRAD",
+        "obras": [
+          "Typhoon",
+          "The Mirror of the Sea",
+          "Almayer's Folly",
+          "An Outcast of the Islands",
+          "The Nigger of the Narcissus",
+          "Youth",
+          "Lord Jim",
+          "Heart of Darkness",
+          "Nostromo",
+          "The Secret Agent",
+          "Under Western Eyes",
+          "Chance"
+        ]
+      },
+      {
+        "name": "JOSEPH RUDYARD KIPLING",
+        "obras": [
+          "Plain Tales from the Hills",
+          "The Phantom Rickshaw",
+          "The Man Who Would Be King",
+          "Baa Baa, Black Sheep",
+          "Wee Willie Winkie",
+          "The Jungle Book",
+          "Just So Stories for Little Children",
+          "Stalky & Co",
+          "Puck of Pook's Hill",
+          "Mandalay",
+          "Gunga Din",
+          "Recessional",
+          "The White Man's Burden",
+          "Captains Courageous",
+          "Kim",
+          "Without Benefit of Clergy"
+        ]
+      }
+    ]
+  },
   "50": {
     "title": "50. THE VICTORIAN NOVEL",
     "autores": [
@@ -221,7 +412,7 @@
           "Dubliners",
           "A Portrait of the Artist as a Young Man",
           "Ulysses",
-          "Finnegan’s Wake"
+          "Finnegan's Wake"
         ]
       }
     ]

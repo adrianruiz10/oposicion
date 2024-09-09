@@ -1,20 +1,71 @@
+body {
+  background-color: #343a40; /* Color de fondo para la pizarra */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7); /* Sombras internas para mayor realismo */
+  border: 10px solid #1c1e22; /* Borde negro para simular el marco de la pizarra */
+  color: #e0e0e0; /* Color del texto que asemeja tiza */
+  font-family: 'Courier New', Courier, monospace, system-ui;
+  font-size: 1.4rem;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  border-radius: 15px;
+  padding: 5px;
+}
+
 .header {
   margin-bottom: 30px;
 }
 
-.input-respuestas {
-  margin-right: 2px;
-  margin-bottom: 2px;
+.responses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.author-group {
+  border: 1px solid #e3d1a4;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.author-title {
+  display: block;
+  margin-top: 10px;
+}
+
+.author-mark {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.total-mark {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .examDistribution {
   text-align: center;
+  margin: auto;
+  max-width: 700px;
+}
+
+.respuesta-input {
+  border: 3px solid;
+  border-radius: 3px;
 }
 
 .respuesta-correcta {
-  border: 2px solid green;
+  border: 3px solid #15fe15;
+  border-radius: 3px;
 }
 
 .respuesta-incorrecta {
-  border: 2px solid red;
+  border: 3px solid #f74848;
+  border-radius: 3px;
 }
