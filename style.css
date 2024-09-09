@@ -1,7 +1,3 @@
-* {
-  font-family: cursive;
-}
-
 body {
   background-color: #343a40; /* Color de fondo para la pizarra */
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7); /* Sombras internas para mayor realismo */
