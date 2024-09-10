@@ -6,12 +6,54 @@ const $checkBtn = $('#check-btn')
 const $showResponsesBtn = $('#show-responses-btn')
 const $selectTemas = $('#available-units')
 const $exam = $('#exam')
+const $menuBtn = $('#menu-btn')
+const $menu = $('#menu')
+const $menuSecondGame = $('#menu-secondGame')
+const $menuFirstGame = $('#menu-firstGame')
 
 $selectBtn.addEventListener('click', handleClickSelectUnit)
 $checkBtn.addEventListener('click', handleClickCheckResponses)
 $showResponsesBtn.addEventListener('click', handleClickShowResponses)
+$menuBtn.addEventListener('click', handleClickMenu)
+$menuSecondGame.addEventListener('click', handleClickSecondGame)
+$menuFirstGame.addEventListener('click', handleClickFirstGame)
+document.addEventListener('click', handleClickDcument)
+window.addEventListener('scroll', onScrollDocument)
 
 let units = {}
+
+function handleClickSecondGame() {
+  $('.second-game').style.display = 'block'
+  $('.first-game').style.display = 'none'
+}
+
+function handleClickFirstGame() {
+  $('.second-game').style.display = 'none'
+  $('.first-game').style.display = 'block'
+}
+
+function onScrollDocument() {
+  if ($menu.style.display === 'block') {
+    $menu.style.display = 'none'
+    $menuBtn.classList.remove('change')
+  }
+}
+
+function handleClickDcument(event) {
+  if (!$menuBtn.contains(event.target)) {
+    $menu.style.display = 'none'
+    $menuBtn.classList.remove('change')
+  }
+}
+
+function handleClickMenu() {
+  $menuBtn.classList.toggle('change')
+  if ($menu.style.display === 'block') {
+    $menu.style.display = 'none'
+  } else {
+    $menu.style.display = 'block'
+  }
+}
 
 function handleClickSelectUnit() {
   const selectedUnit = units[$selectTemas.value]

@@ -8,15 +8,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="header">
-      <select id="available-units" class="unit-select"></select>
-      <button id="select-btn">Search authors</button>
-    </section>
-
-    <section id="exam" class="examDistribution"></section>
-    <section class="examDistribution">
-      <button id="check-btn">Correct</button>
-      <button id="show-responses-btn">Show answers</button>
-    </section>
+    <header>
+      <div id="menu-btn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="menu" class="menu">
+        <ul>
+          <li id="menu-firstGame">First Game</li>
+          <li id="menu-secondGame">Second Game</li>
+        </ul>
+      </div>
+      <h2>OPOSICIÓN</h2>
+    </header>
+    <main>
+      <section class="first-game">
+        <section class="search-section">
+          <select id="available-units" class="unit-select"></select>
+          <button id="select-btn">Search authors</button>
+        </section>
+        <section id="exam" class="examDistribution"></section>
+        <section class="examDistribution">
+          <button id="check-btn">Correct</button>
+          <button id="show-responses-btn">Show answers</button>
+        </section>
+      </section>
+      <section class="second-game">
+        <label>Próximamente</label>
+      </section>
+    </main>
   </body>
 </html>
