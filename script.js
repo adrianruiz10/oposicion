@@ -10,6 +10,8 @@ const $menuBtn = $('#menu-btn')
 const $menu = $('#menu')
 const $menuSecondGame = $('#menu-secondGame')
 const $menuFirstGame = $('#menu-firstGame')
+const $iconSun = $('.sun-icon')
+const $iconMoon = $('.moon-icon')
 
 $selectBtn.addEventListener('click', handleClickSelectUnit)
 $checkBtn.addEventListener('click', handleClickCheckResponses)
@@ -17,10 +19,27 @@ $showResponsesBtn.addEventListener('click', handleClickShowResponses)
 $menuBtn.addEventListener('click', handleClickMenu)
 $menuSecondGame.addEventListener('click', handleClickSecondGame)
 $menuFirstGame.addEventListener('click', handleClickFirstGame)
+$iconSun.addEventListener('click', handleClickSunIcon)
+$iconMoon.addEventListener('click', handleClickMoonIcon)
 document.addEventListener('click', handleClickDcument)
 window.addEventListener('scroll', onScrollDocument)
 
 let units = {}
+
+const root = document.documentElement
+let currentTheme = root.dataset.theme
+
+function handleClickMoonIcon() {
+  document.documentElement.setAttribute('data-theme', 'light')
+  $iconSun.style.display = 'block'
+  $iconMoon.style.display = 'none'
+}
+
+function handleClickSunIcon() {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  $iconSun.style.display = 'none'
+  $iconMoon.style.display = 'block'
+}
 
 function handleClickSecondGame() {
   $('.second-game').style.display = 'block'
