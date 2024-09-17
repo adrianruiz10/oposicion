@@ -1,4 +1,177 @@
 {
+  "32": {
+    "title": "32. NARRATIVE TEXTS. STRUCTURE AND CHARACTERISTICS",
+    "autores": [
+      {
+        "name": "WILLIAM GOLDING",
+        "obras": ["Lord of the Flies"]
+      },
+      {
+        "name": "IAN MCEWAN",
+        "obras": ["Atonement"]
+      },
+      {
+        "name": "HEMINGWAY",
+        "obras": ["A Clean, Well-lighted Place"]
+      }
+    ]
+  },
+  "44": {
+    "title": "44. WILLIAM SHAKESPEARE AND HIS TIME. MOST OUTSTANDING WORKS",
+    "autores": [
+      {
+        "name": "WILLIAM SHAKESPEARE",
+        "obras": [
+          "As You Like It",
+          "Hamlet",
+          "Julius Caesar",
+          "Venus and Adonis",
+          "The Rape of Lucrece",
+          "Sonnets",
+          "Henry VI",
+          "Richard III",
+          "Richard II",
+          "Henry V",
+          "The Comedy of Errors",
+          "The Two Gentlemen of Verona",
+          "Love's Labour's Lost",
+          "A Midsummer Night's Dream",
+          "Twelfth Night",
+          "The Merchant of Venice",
+          "Much Ado About Nothing",
+          "The Merry Wives of Windsor",
+          "All's Well That Ends Well",
+          "Troilus and Cressida",
+          "Measure for Measure",
+          "Cymbeline",
+          "The Winter's Tale",
+          "The Tempest",
+          "Romeo and Juliet",
+          "Othello: The Moor of Venice",
+          "King Lear",
+          "Macbeth",
+          "Antony and Cleopatra",
+          "Coriolanus",
+          "Titus Andronicus"
+        ]
+      },
+      {
+        "name": "Christopher Marlowe",
+        "obras": ["Doctor Faustus", "Jew of Malta", "Tamburlaine"]
+      }
+    ]
+  },
+  "45": {
+    "title": "45. GREAT BRITAIN IN THE 18th CENTURY. SOCIOECONOMIC DEVELOPMENT AND POLITICAL ORGANISATION",
+    "autores": [
+      {
+        "name": "HENRY FIELDING",
+        "obras": [
+          "Tom Thumb",
+          "Shamela",
+          "Joseph Andrews",
+          "Tom Jones, a Foundling",
+          "Amelia"
+        ]
+      },
+      {
+        "name": "Sheridan",
+        "obras": ["The Rivals"]
+      },
+      {
+        "name": "DANIEL DEFOE",
+        "obras": [
+          "A Journal of the Plague Year",
+          "Captain Singleton",
+          "Colonel Jack",
+          "Roxana",
+          "Robinson Crusoe",
+          "Moll Flanders"
+        ]
+      },
+      {
+        "name": "SAMUEL RICHARDSON",
+        "obras": ["Pamela", "Clarissa", "Sir Charles Grandison"]
+      },
+      {
+        "name": "JONATHAN SWIFT",
+        "obras": ["Gulliver's Travels"]
+      },
+      {
+        "name": "TOBIAS SMOLLETT",
+        "obras": [
+          "The Adventures of Roderick Random",
+          "The Adventures of Peregrine Pickle",
+          "The Expedition of Humphry Clinker"
+        ]
+      },
+      {
+        "name": "LAURENCE STERNE",
+        "obras": ["Tristram Shandy"]
+      },
+      {
+        "name": "Sarah FIELDING",
+        "obras": ["The Adventures of David Simple"]
+      },
+      {
+        "name": "Charlotte LENNOX",
+        "obras": ["The Female Quixote"]
+      },
+      {
+        "name": "Richard GRAVES",
+        "obras": ["The Spiritual Quixote"]
+      },
+      {
+        "name": "Henry MACKENZIE",
+        "obras": ["The Man of Feeling"]
+      },
+      {
+        "name": "John CLELAND",
+        "obras": ["Fanny Hill"]
+      },
+      {
+        "name": "Fanny BURNEY",
+        "obras": ["Evelina"]
+      },
+      {
+        "name": "Horace WALPOLE",
+        "obras": ["The Castle of Otranto"]
+      },
+      {
+        "name": "William BECKFORD",
+        "obras": ["Vathek"]
+      },
+      {
+        "name": "Ann RADCLIFFE",
+        "obras": ["The Mysteries of Udolpho"]
+      },
+      {
+        "name": "Matthew LEWIS",
+        "obras": ["The Monk"]
+      }
+    ]
+  },
+  "46": {
+    "title": "46. THE HISTORICAL CONFIGURATION OF THE USA FROM THE WAR OF INDEPENDENCE TO THE CIVIL WAR",
+    "autores": [
+      {
+        "name": "James Fenimore Cooper",
+        "obras": ["The Last of the Mohicans"]
+      },
+      {
+        "name": "Harriet Beecher Stowe",
+        "obras": ["Uncle Tom's Cabin"]
+      },
+      {
+        "name": "Nathaniel Hawthornee",
+        "obras": ["The Scarlet Letter"]
+      },
+      {
+        "name": "Stephen Crane",
+        "obras": ["The Red Badge of Courage"]
+      }
+    ]
+  },
   "47": {
     "title": "47. INDUSTRIAL REVOLUTION AND DICKENS",
     "autores": [
@@ -386,6 +559,262 @@
       }
     ]
   },
+  "51": {
+    "title": "51. OSCAR WILDE AND GEORGE BERNARD SHAW",
+    "autores": [
+      {
+        "name": "John Millington Synge",
+        "obras": ["The Playboy of the Western World"]
+      },
+      {
+        "name": "SEAN O'CASEY",
+        "obras": ["The Shadow of a Gunman", "Juno and the Paycock"]
+      },
+      {
+        "name": "OSCAR WILDE",
+        "obras": [
+          "The Happy Prince and Other Tales",
+          "The House of Pomegranates",
+          "The Happy Prince",
+          "The Selfish Giant",
+          "The Nightingale and the Rose",
+          "The Devoted Friend",
+          "The Remarkable Rocket",
+          "The Young King",
+          "Lord Arthur Savile's Crime",
+          "Other Stories",
+          "The Sphinx Without a Secret",
+          "The Picture of Dorian Gray",
+          "Lady Windermere's Fan",
+          "A Woman of No Importance",
+          "An Ideal Husband",
+          "The Importance of Being Earnest",
+          "De Profundis",
+          "The Ballad of Reading Gaol"
+        ]
+      },
+      {
+        "name": "GEORGE BERNARD SHAW",
+        "obras": [
+          "Shakes versus Shav",
+          "Widowers' Houses",
+          "Plays Pleasant and Unpleasant",
+          "A Doll's House",
+          "Mrs Warrens' Profession",
+          "Arms and the Man",
+          "Candida",
+          "You Never Can Tell",
+          "Three Plays for Puritans",
+          "Captain Brassbound's Conversion",
+          "Caesar and Cleopatra",
+          "The Devil's Discipline",
+          "Man and Superman",
+          "John Bull's Other Island",
+          "Major Barbara",
+          "The Doctor's Dilemma",
+          "Pygmalion",
+          "Heartbreak House",
+          "Back to Methuselah",
+          "Saint Joan"
+        ]
+      }
+    ]
+  },
+  "53": {
+    "title": "53. THE NOVEL, SHORT STORY AND POETRY IN THE USA: MELVILLE, POE AND WHITMAN",
+    "autores": [
+      {
+        "name": "James Fenimore Cooper",
+        "obras": ["The Last of the Mohicans"]
+      },
+      {
+        "name": "Harriet Beecher Stowe",
+        "obras": ["Uncle Tom's Cabin"]
+      },
+      {
+        "name": "Washington Irving",
+        "obras": ["Rip Van Winkle", "The Legend of Sleepy Hollow"]
+      },
+      {
+        "name": "Nathaniel Hawthorne",
+        "obras": ["The Scarlet Letter"]
+      },
+      {
+        "name": "HERMAN MELVILLE",
+        "obras": [
+          "Typee: A Peep at Polynesian Life",
+          "Mardi",
+          "Redburn",
+          "Omoo",
+          "White-Jacket",
+          "Moby-Dick",
+          "Pierre",
+          "Israel Potter",
+          "The Confidence-Man",
+          "Bartleby, the Scrivener",
+          "Battle-Pieces and Aspects of the War",
+          "Clarel",
+          "Billy Budd"
+        ]
+      },
+      {
+        "name": "EDGAR ALLAN POE",
+        "obras": [
+          "The Narrative of Arthur Gordon Pym",
+          "Tamerlane and Other Poems",
+          "Al Aaraaf, Tamerlane and Minor Poems",
+          "Eldorado",
+          "The Raven",
+          "A Dream Within a Dream",
+          "Tamerlane",
+          "Sonnet - To Science",
+          "The City in the Sea",
+          "The Murders in the Rue Morgue",
+          "Tales of the Grotesque and Arabesque",
+          "William Wilson",
+          "Ligeia",
+          "The Black Cat",
+          "The Pit and the Pendulum",
+          "The Gold-Bug",
+          "Morella",
+          "The Tell-Tale Heart",
+          "Annabel Lee",
+          "The Fall of the House of Usher",
+          "The Cask of Amontillado"
+        ]
+      },
+      {
+        "name": "WALT WHITMAN",
+        "obras": [
+          "Drum-Taps",
+          "Beat! Beat! Drums!",
+          "Sequel",
+          "O Captain! My Captain!",
+          "Leaves of Grass",
+          "Song of Myself"
+        ]
+      }
+    ]
+  },
+  "54": {
+    "title": "54. THE HUMORISM: MARK TWAIN. HENRY JAMES AND THE COSMOPOLITANISM",
+    "autores": [
+      {
+        "name": "WILLIAM DEAN HOWELLS",
+        "obras": [
+          "A Modern Instance",
+          "The Rise of Silas Lapham",
+          "The Landlord at Lion's Head",
+          "An Imperative Duty",
+          "A Hazard of New Fortune"
+        ]
+      },
+      {
+        "name": "MARK TWAIN",
+        "obras": [
+          "The Innocents Abroad",
+          "Roughing It",
+          "The Adventures of Tom Sawyer",
+          "The Prince and the Pauper",
+          "Life on the Mississippi",
+          "The Adventures of Huckleberry Finn",
+          "The Gilded Age",
+          "A Connecticut Yankee in King Arthur's Court",
+          "The Tragedy of Pudd'nhead Wilson",
+          "The Man that Corrupted Hadleyburg",
+          "The Mysterious Stranger",
+          "Cannibalism in the Cars",
+          "Personal Recollections of Joan of Arc"
+        ]
+      },
+      {
+        "name": "HENRY JAMES",
+        "obras": [
+          "Roderick Hudson",
+          "The American",
+          "The Europeans",
+          "Daisy Miller",
+          "Washington Square",
+          "The Portrait of a Lady",
+          "The Wings of the Dove",
+          "The Princess Casamassima",
+          "The Bostonians",
+          "What Maisie Knew",
+          "The Turn of the Screw",
+          "The Ambassadors",
+          "The Golden Bowl"
+        ]
+      }
+    ]
+  },
+  "55": {
+    "title": "55. THE LOST GENERATION: S. FITZGERALD, J. STEINBECK AND E. HEMINGWAY",
+    "autores": [
+      {
+        "name": "ERNEST HEMINGWAY",
+        "obras": [
+          "The Sun Also Rises",
+          "The Snows of Kilimanjaro",
+          "The Short Happy Life of Francis Macomber",
+          "Men Without Women",
+          "Fifty Grand",
+          "The Killers",
+          "A Farewell to Arms",
+          "Death in the Afternoon",
+          "For Whom the Bell Tolls",
+          "Across the River and Into the Trees",
+          "The Old Man and the Sea",
+          "A Moveable Feast",
+          "Hills Like White Elephants"
+        ]
+      },
+      {
+        "name": "FRANCIS SCOTT KEY FITZGERALD",
+        "obras": [
+          "This Side of Paradise",
+          "The Diamond as Big as the Ritz",
+          "Flappers and Philosophers",
+          "Six Tales of the Jazz Age and Other Stories",
+          "The Curious Case of Benjamin Button",
+          "The Beautiful and the Damned",
+          "All the Sad Young Men",
+          "The Rich Boy",
+          "Babylon Revisited",
+          "Tender is the Night"
+        ]
+      },
+      {
+        "name": "JOHN ERNST STEINBECK",
+        "obras": [
+          "Tortilla Flat",
+          "In Dubious Battle",
+          "The Red Pony",
+          "Of Mice and Men",
+          "The Grapes of Wrath",
+          "The Moon is Down",
+          "East of Eden"
+        ]
+      },
+      {
+        "name": "WILLIAM FAULKNER",
+        "obras": [
+          "Sartoris",
+          "Snopes trilogy",
+          "The Sound and the Fury",
+          "As I Lay Dying",
+          "Sanctuary",
+          "Light in August",
+          "Absalom, Absalom!",
+          "If I Forget Thee, Jerusalem",
+          "The Wild Palms",
+          "Old Man",
+          "A Fable",
+          "The Reivers",
+          "Requiem for a Nun"
+        ]
+      }
+    ]
+  },
   "56": {
     "title": "56. RELATIONS BETWEEN IRELAND AND GREAT BRITAIN",
     "autores": [
@@ -409,6 +838,192 @@
           "A Portrait of the Artist as a Young Man",
           "Ulysses",
           "Finnegan's Wake"
+        ]
+      }
+    ]
+  },
+  "57": {
+    "title": "57. THE UK DURING THE INTERWAR PERIOD & WWII.  OUTSTANDING LITERARY WRITERS",
+    "autores": [
+      {
+        "name": "THOMAS HARDY",
+        "obras": [
+          "Wessex Heights",
+          "Under the Greenwood Tree",
+          "Far from the Madding Crowd",
+          "The Return of the Native",
+          "Tess of the D'Urbervilles",
+          "Jude the Obscure"
+        ]
+      },
+      {
+        "name": "David Herbert Lawrence",
+        "obras": ["Sons and Lovers"]
+      },
+      {
+        "name": "William Butler Yeats",
+        "obras": ["Easter", "Leda and the Swan", "Among School Children"]
+      },
+      {
+        "name": "JAMES JOYCE",
+        "obras": [
+          "Finnegans Wake",
+          "Dubliners",
+          "A Portrait of the Artist as a Young Man",
+          "Ulysses"
+        ]
+      },
+      {
+        "name": "EDWARD MORGAN FORSTER",
+        "obras": ["Howards End", "A Passage to India", "Maurice"]
+      },
+      {
+        "name": "VIRGINIA WOOLF",
+        "obras": [
+          "Mrs Dalloway",
+          "To the Lighthouse",
+          "Orlando",
+          "A Room of One's Own",
+          "The Waves"
+        ]
+      },
+      {
+        "name": "ALDOUS HUXLEY",
+        "obras": [
+          "Brave New World",
+          "Point Counter Point",
+          "Crome Yellow",
+          "Grey Eminence",
+          "The Art of Seeing",
+          "Island"
+        ]
+      },
+      {
+        "name": "GEORGE ORWELL",
+        "obras": ["Animal Farm", "Burmese Days", "Keep the Aspidistra Flying"]
+      },
+      {
+        "name": "ARTHUR EVELYN WAUGH",
+        "obras": ["Decline and Fall", "Vile Bodies", "Sword of Honour"]
+      },
+      {
+        "name": "GRAHAM GREENE",
+        "obras": ["Brighton Rock", "The Power and the Glory", "The Third Man"]
+      },
+      {
+        "name": "THOMAS STEARNS ELIOT",
+        "obras": [
+          "The Love Song of J. Alfred Prufrock",
+          "The Waste Land",
+          "Ash Wednesday",
+          "Four Quartets"
+        ]
+      },
+      {
+        "name": "WYSTAN HUGH AUDEN",
+        "obras": [
+          "Look, Stranger!",
+          "Spain",
+          "Funeral Blues",
+          "September 1, 1939",
+          "The Age of Anxiety",
+          "For the Time Being"
+        ]
+      },
+      {
+        "name": "EZRA POUND",
+        "obras": ["In a Station of the Metro"]
+      },
+      {
+        "name": "DYLAN THOMAS",
+        "obras": [
+          "Death and Entrances",
+          "A Portrait of the Artist as a Young Dog"
+        ]
+      },
+      {
+        "name": "SEAN O'CASEY",
+        "obras": [
+          "The Shadow of a Gunman",
+          "Juno and the Paycock",
+          "The Plough and the Stars"
+        ]
+      }
+    ]
+  },
+  "60": {
+    "title": "60. THE NORTH AMERICAN BLACK NOVEL: D. HAMMETT & R. CHANDLER",
+    "autores": [
+      {
+        "name": "William Wilkie Collins",
+        "obras": ["The Moonstone"]
+      },
+      {
+        "name": "Edgar Allan Poe ",
+        "obras": ["The Murders in the Rue Morgue"]
+      },
+      {
+        "name": "Sir Arthur Conan DOYLE",
+        "obras": [
+          "A Study in Scarlet",
+          "The Sign of Four",
+          "The Adventures of Sherlock Holmes",
+          "The Hound of Baskervilles"
+        ]
+      },
+      {
+        "name": "Agatha Christie",
+        "obras": [
+          "Murder on the Orient Express",
+          "Then There Were None",
+          "A Murder is Announced"
+        ]
+      },
+      {
+        "name": "PHYLLIS DOROTHY JAMES",
+        "obras": [
+          "Unnatural Causes",
+          "Cover Her Face",
+          "An Unsuitable Job for a Woman",
+          "The Skull Beneath the Skin",
+          "Shroud for a Nightingale",
+          "The Black Tower",
+          "Death of an Expert Witness",
+          "A Taste for Death",
+          "Original Sin",
+          "The Lighthouse"
+        ]
+      },
+      {
+        "name": "Mickey Spillane",
+        "obras": ["I, the Jury"]
+      },
+      {
+        "name": "SAMUEL DASHIELL HAMMETT",
+        "obras": [
+          "Red Harvest",
+          "The Dain Curse",
+          "The Maltese Falcon",
+          "The Glass Key",
+          "The Thin Man",
+          "After the Thin Man",
+          "Another Thin Man",
+          "Secret Agent X-9"
+        ]
+      },
+      {
+        "name": "RAYMOND THORNTON CHANDLER",
+        "obras": [
+          "The Big Sleep",
+          "Farewell, My Lovely",
+          "The High Window",
+          "The Lady in the Lake",
+          "The Little Sister",
+          "The Long Goodbye",
+          "Playback",
+          "The Blue Dahlia",
+          "Double Indemnity",
+          "The Simple Art of Murder"
         ]
       }
     ]

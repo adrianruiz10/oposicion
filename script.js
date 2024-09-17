@@ -10,8 +10,7 @@ const $menuBtn = $('#menu-btn')
 const $menu = $('#menu')
 const $menuSecondGame = $('#menu-secondGame')
 const $menuFirstGame = $('#menu-firstGame')
-const $iconSun = $('.sun-icon')
-const $iconMoon = $('.moon-icon')
+const $colorSwitch = $('#switch input[type="checkbox"]')
 
 $selectBtn.addEventListener('click', handleClickSelectUnit)
 $checkBtn.addEventListener('click', handleClickCheckResponses)
@@ -19,26 +18,18 @@ $showResponsesBtn.addEventListener('click', handleClickShowResponses)
 $menuBtn.addEventListener('click', handleClickMenu)
 $menuSecondGame.addEventListener('click', handleClickSecondGame)
 $menuFirstGame.addEventListener('click', handleClickFirstGame)
-$iconSun.addEventListener('click', handleClickSunIcon)
-$iconMoon.addEventListener('click', handleClickMoonIcon)
+$colorSwitch.addEventListener('change', changeTheme)
 document.addEventListener('click', handleClickDcument)
 window.addEventListener('scroll', onScrollDocument)
 
 let units = {}
 
-const root = document.documentElement
-let currentTheme = root.dataset.theme
-
-function handleClickMoonIcon() {
-  document.documentElement.setAttribute('data-theme', 'light')
-  $iconSun.style.display = 'block'
-  $iconMoon.style.display = 'none'
-}
-
-function handleClickSunIcon() {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  $iconSun.style.display = 'none'
-  $iconMoon.style.display = 'block'
+function changeTheme(ev) {
+  if (ev.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark')
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light')
+  }
 }
 
 function handleClickSecondGame() {
@@ -106,7 +97,7 @@ function handleClickSelectUnit() {
 }
 
 function handleClickShowResponses() {
-  const respuestas = $$('input')
+  const respuestas = $$('.respuesta-input')
   if (respuestas.length === 0) return
   const selectedUnit = units[$selectTemas.value]
   let contador = 0
@@ -134,7 +125,7 @@ const authorGrouper = (listOfValues, prop) => {
 }
 
 function handleClickCheckResponses() {
-  const respuestas = $$('input')
+  const respuestas = $$('.respuesta-input')
   const authorMarks = $$('.author-mark')
   const totalMarkLabel = $('#totalMark')
   if (respuestas.length === 0) return
