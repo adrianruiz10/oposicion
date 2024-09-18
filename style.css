@@ -20,6 +20,31 @@
 
 * {
   font-family: 'Courier New', Courier, monospace, system-ui;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--color-background);
+  -webkit-tap-highlight-color: transparent;
 }
 
 header {
@@ -28,7 +53,6 @@ header {
   justify-content: space-between;
   color: var(--color-text);
   background-color: var(--color-background);
-  padding: 0;
   height: 60px;
 }
 
@@ -42,15 +66,21 @@ main {
   font-weight: 700;
   padding: 20px;
   text-align: center;
-  min-height: 100dvh;
-}
-
-body {
-  margin: 0;
 }
 
 #menu-btn {
   cursor: pointer;
+  z-index: 1;
+}
+
+.menu::before {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 35px;
+  top: -39px;
+  background-color: var(--color-green-medium);
+  border: 1px solid var(--color-green-ligther);
 }
 
 .first-game {
@@ -72,8 +102,6 @@ body {
 
   ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     border: 1px solid var(--color-green-ligther);
 
     li {
@@ -100,8 +128,9 @@ body {
   width: 30px;
   height: 4px;
   background-color: var(--color-text);
-  margin: 6px 10px 0 10px;
+  margin: 6px 12px 0 12px;
   transition: 0.4s;
+  z-index: 3;
 }
 
 .change .bar1 {
@@ -208,6 +237,7 @@ button {
 .moon-icon {
   position: absolute;
   bottom: 7px;
+  left: 6px;
   z-index: 1;
 }
 
@@ -258,7 +288,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 924px) {
   #select-btn {
     margin-top: 20px;
   }
