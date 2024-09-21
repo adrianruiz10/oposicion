@@ -20,6 +20,7 @@
 
 * {
   font-family: 'Courier New', Courier, monospace, system-ui;
+  letter-spacing: 0px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

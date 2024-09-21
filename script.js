@@ -11,18 +11,56 @@ const $menu = $('#menu')
 const $menuSecondGame = $('#menu-secondGame')
 const $menuFirstGame = $('#menu-firstGame')
 const $colorSwitch = $('#switch input[type="checkbox"]')
+const $searchSG = $('#search-sg')
+const $checkBtnSG = $('#check-btn-sg')
+const $authorSG = $('#author-sg')
 
 $selectBtn.addEventListener('click', handleClickSelectUnit)
 $checkBtn.addEventListener('click', handleClickCheckResponses)
+$checkBtnSG.addEventListener('click', handleClickCheckResponsesSG)
 $showResponsesBtn.addEventListener('click', handleClickShowResponses)
 $menuBtn.addEventListener('click', handleClickMenu)
 $menuSecondGame.addEventListener('click', handleClickSecondGame)
 $menuFirstGame.addEventListener('click', handleClickFirstGame)
 $colorSwitch.addEventListener('change', changeTheme)
+$searchSG.addEventListener('click', handleClickSearchBook)
 document.addEventListener('click', handleClickDcument)
 window.addEventListener('scroll', onScrollDocument)
 
 let units = {}
+let arraySecondGame = []
+let secondGameNumber = -1
+
+function handleClickCheckResponsesSG() {
+  if (secondGameNumber === -1) return
+  const response = $authorSG.value.trim()
+  if ($authorSG.value === '') return
+  if (
+    arraySecondGame[secondGameNumber][0].includes(response.toLocaleUpperCase())
+  ) {
+    $authorSG.classList.add('respuesta-correcta')
+    $authorSG.classList.remove('respuesta-incorrecta')
+    $authorSG.value = arraySecondGame[secondGameNumber][0]
+    arraySecondGame.slice(secondGameNumber)
+  } else {
+    $authorSG.classList.remove('respuesta-correcta')
+    $authorSG.classList.add('respuesta-incorrecta')
+  }
+}
+
+const generateRandomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+function handleClickSearchBook() {
+  if (arraySecondGame.length === 0) return
+  $authorSG.classList.remove('respuesta-correcta')
+  $authorSG.classList.remove('respuesta-incorrecta')
+  $authorSG.value = ''
+  const number = generateRandomNumber(0, arraySecondGame.length - 1)
+  secondGameNumber = number
+  $('#book-sg').innerHTML = arraySecondGame[number][1]
+}
 
 function changeTheme(ev) {
   if (ev.target.checked) {
@@ -161,12 +199,28 @@ function handleClickCheckResponses() {
 }
 
 const setData = (data) => {
+  const authors = {}
   for (const key in data) {
+    createArrySecondGame(data[key], authors)
     const newOption = document.createElement('option')
     newOption.value = key
     newOption.text = data[key].title
     $selectTemas.appendChild(newOption)
   }
+  arraySecondGame = Object.entries(authors).flatMap(([autor, libros]) =>
+    libros.map((libro) => [autor, libro])
+  )
+}
+
+function createArrySecondGame(unit, authors) {
+  unit.autores.forEach((author) => {
+    if (
+      !authors[author.name] ||
+      authors[author.name].length < author.obras.length
+    ) {
+      authors[author.name] = [...author.obras]
+    }
+  })
 }
 
 fetch('temas.json')
