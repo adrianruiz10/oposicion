@@ -14,6 +14,7 @@ const $colorSwitch = $('#switch input[type="checkbox"]')
 const $searchSG = $('#search-sg')
 const $checkBtnSG = $('#check-btn-sg')
 const $authorSG = $('#author-sg')
+const $refreshSG = $('#refresh-sg')
 
 $selectBtn.addEventListener('click', handleClickSelectUnit)
 $checkBtn.addEventListener('click', handleClickCheckResponses)
@@ -24,28 +25,30 @@ $menuSecondGame.addEventListener('click', handleClickSecondGame)
 $menuFirstGame.addEventListener('click', handleClickFirstGame)
 $colorSwitch.addEventListener('change', changeTheme)
 $searchSG.addEventListener('click', handleClickSearchBook)
+$refreshSG.addEventListener('click', handleClickRefreshGame)
 document.addEventListener('click', handleClickDcument)
 window.addEventListener('scroll', onScrollDocument)
 
 let units = {}
 let arraySecondGame = []
 let secondGameNumber = -1
+const secondGameList = []
+
+function handleClickRefreshGame() {
+  arraySecondGame = [...secondGameList]
+}
 
 function handleClickCheckResponsesSG() {
   if (secondGameNumber === -1) return
   const response = $authorSG.value.trim()
   if ($authorSG.value === '') return
-  if (
-    arraySecondGame[secondGameNumber][0].includes(response.toLocaleUpperCase())
-  ) {
-    $authorSG.classList.add('respuesta-correcta')
-    $authorSG.classList.remove('respuesta-incorrecta')
-    $authorSG.value = arraySecondGame[secondGameNumber][0]
-    arraySecondGame.slice(secondGameNumber)
-  } else {
-    $authorSG.classList.remove('respuesta-correcta')
-    $authorSG.classList.add('respuesta-incorrecta')
+  const authorName = arraySecondGame[secondGameNumber][0]
+  const isCorrect = authorName.includes(response.toLocaleUpperCase())
+  if (isCorrect) {
+    $authorSG.value = authorName
+    arraySecondGame.splice(secondGameNumber, 1)
   }
+  setInputStyle(isCorrect, $authorSG)
 }
 
 const generateRandomNumber = (min, max) => {
@@ -53,7 +56,10 @@ const generateRandomNumber = (min, max) => {
 }
 
 function handleClickSearchBook() {
-  if (arraySecondGame.length === 0) return
+  if (arraySecondGame.length === 0) {
+    secondGameNumber = -1
+    return
+  }
   $authorSG.classList.remove('respuesta-correcta')
   $authorSG.classList.remove('respuesta-incorrecta')
   $authorSG.value = ''
@@ -138,17 +144,16 @@ function handleClickShowResponses() {
   const respuestas = $$('.respuesta-input')
   if (respuestas.length === 0) return
   const selectedUnit = units[$selectTemas.value]
-  let contador = 0
+  let count = 0
   respuestas.forEach((input, i) => {
     if (i > 0 && input.name !== respuestas[i - 1].name) {
-      contador = 0
+      count = 0
     }
     const name = input.name
     const author = selectedUnit.autores.find((author) => author.name === name)
-    input.value = author.obras[contador]
-    input.classList.remove('respuesta-correcta')
-    input.classList.remove('respuesta-incorrecta')
-    contador++
+    input.value = author.obras[count]
+    deleteInputStyle(input)
+    count++
   })
 }
 
@@ -164,30 +169,25 @@ const authorGrouper = (listOfValues, prop) => {
 
 function handleClickCheckResponses() {
   const respuestas = $$('.respuesta-input')
+  if (respuestas.length === 0) return
   const authorMarks = $$('.author-mark')
   const totalMarkLabel = $('#totalMark')
-  if (respuestas.length === 0) return
   const selectedUnit = units[$selectTemas.value]
   const groupedAuthorsResponse = authorGrouper(Array.from(respuestas), 'name')
   const groupedAuthorMarks = authorGrouper(Array.from(authorMarks), 'id')
-
   let totalMark = 0
   for (const key in groupedAuthorsResponse) {
     let mark = 0
     const author = selectedUnit.autores.find((author) => author.name === key)
     groupedAuthorsResponse[key].forEach((input) => {
-      if (
-        author.obras.some(
-          (obra) => obra.toLocaleLowerCase() === input.value.toLocaleLowerCase()
-        )
-      ) {
+      const answer = input.value.toLocaleLowerCase()
+      const isCorrect = author.obras.some(
+        (obra) => answer === obra.toLocaleLowerCase()
+      )
+      if (isCorrect) {
         mark++
-        input.classList.remove('respuesta-incorrecta')
-        input.classList.add('respuesta-correcta')
-      } else {
-        input.classList.remove('respuesta-correcta')
-        input.classList.add('respuesta-incorrecta')
       }
+      setInputStyle(isCorrect, input)
     })
     totalMark += mark
     const label = groupedAuthorMarks[key][0]
@@ -198,29 +198,46 @@ function handleClickCheckResponses() {
   totalMarkLabel.innerHTML = currentMark.replace(/^[^\/]*/, totalMark)
 }
 
+function setInputStyle(isCorrect, input) {
+  const styleConfig = {
+    true: { add: 'respuesta-correcta', remove: 'respuesta-incorrecta' },
+    false: { add: 'respuesta-incorrecta', remove: 'respuesta-correcta' },
+  }
+  input.classList.remove(styleConfig[isCorrect].remove)
+  input.classList.add(styleConfig[isCorrect].add)
+}
+
+function deleteInputStyle(input) {
+  input.classList.remove('respuesta-incorrecta')
+  input.classList.remove('respuesta-correcta')
+}
+
+const createArrySecondGame = (unit, authors) => {
+  unit.autores.forEach((author) => {
+    const bookList = authors[author.name]
+    if (!bookList || bookList.length < author.obras.length) {
+      authors[author.name] = [...author.obras]
+    }
+  })
+}
+
+const setUnitsFirstGame = (data, key) => {
+  const newOption = document.createElement('option')
+  newOption.value = key
+  newOption.text = data[key].title
+  $selectTemas.appendChild(newOption)
+}
+
 const setData = (data) => {
   const authors = {}
   for (const key in data) {
     createArrySecondGame(data[key], authors)
-    const newOption = document.createElement('option')
-    newOption.value = key
-    newOption.text = data[key].title
-    $selectTemas.appendChild(newOption)
+    setUnitsFirstGame(data, key)
   }
   arraySecondGame = Object.entries(authors).flatMap(([autor, libros]) =>
     libros.map((libro) => [autor, libro])
   )
-}
-
-function createArrySecondGame(unit, authors) {
-  unit.autores.forEach((author) => {
-    if (
-      !authors[author.name] ||
-      authors[author.name].length < author.obras.length
-    ) {
-      authors[author.name] = [...author.obras]
-    }
-  })
+  secondGameList.push(...arraySecondGame)
 }
 
 fetch('temas.json')

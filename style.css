@@ -289,6 +289,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+#book-sg {
+  width: 100%;
+}
+
 @media screen and (max-width: 924px) {
   #select-btn {
     margin-top: 20px;
